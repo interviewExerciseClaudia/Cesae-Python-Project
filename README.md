@@ -10,6 +10,11 @@
 
 > ⚙️ A user-based Task Manager with DynamoDB-powered persistence!
 
+### ##eating item on DynamoDB
+![Criação de item](./file-QbULtRkkHKANqfBPFJndsM)
+
+### DynamoDB Tasks Table
+![Tabela de tarefas](./file-KVXWdM1u2RGFKqu5x2gGUk)
 ---
 
 ## ✨ Features
