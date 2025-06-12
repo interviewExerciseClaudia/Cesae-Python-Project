@@ -11,7 +11,7 @@
 > ⚙️ A user-based Task Manager with DynamoDB-powered persistence!
 
 ### Creating item on DynamoDB
-![Item Creation](./https://github.com/interviewExerciseClaudia/Cesae-Python-Project/tmp_0c584dd1-50fd-4bdb-9e5a-31f3cb1269b6.jpeg)
+![Item Creation](./tmp_0c584dd1-50fd-4bdb-9e5a-31f3cb1269b6.jpeg)
 
 ### DynamoDB Tasks Table
 ![Tasks Table](./file-KVXWdM1u2RGFKqu5x2gGUk)
