@@ -46,11 +46,11 @@ def get_my_tasks():
 def get_all_tasks():
     return database.values()
 
-def add_new_task():
+def add_new_task(username):
     main.clear_terminal()
     while(True):
         # EU TENHO A CERTEZA COMO IR BUSCAR O USER
-        username = users.get_user()
+        # username = users.get_user()
         
         title = input("Please insert a title for the task to be introduced : ").lower()
         
@@ -63,15 +63,12 @@ def add_new_task():
         print("4. Low")
         print("5. Lowest")
         
-        priority = int(input("From the list above, please asign a priority to your task : "))
-        
-        for k,v in priorities_dict:
-            if v not in priorities_dict:
-                priority = int(input("Please insert a valid priority : "))
-                break
+        priority = int(input("From the list above, please asign a priority to your task : "))      
             
-        due_date = datetime(input("Please insert the due date (YYYY, MM, DD) for the task to be introduced : ")).strftime("%Y/%m/%d")       
-        assigned_date = datetime.now()
+        due_date = (input("Please insert the due date (YYYY-MM-DD) for the task to be introduced : "))
+        # due_date = datetime(2018, 6, 1)
+        assigned_date = str(datetime.now()).lstrip("datetime.datetime(")[:10]
+        # assigned_date = str(datetime.now().year, datetime.now().month, datetime.now().day)
         
         print(f"\n--- TASK CATEGORIES  ---")
         print("1. Maintenance")
@@ -80,26 +77,29 @@ def add_new_task():
         print("4. Documentation")
         
         category = int(input("Please designate a valid category for the task you wish to insert: "))
-        
-        for k,v in categories_dict:
-            if v not in priorities_dict:
-                category = int(input("Please insert a valid category : "))
-                break
+
         try :
         # JA NAO E RECORDO SE OS DICIONARIOS SAO MUTAVEIS OU IMUTAVEIS E SE ISTO VAI SUBSTITUIR ALGUA TAREFA QUE AQUELE UTILIZADOR JA TENHA NA LISTA DE TASKS
-            database[username] = { "tasks": [{
-                    "title": title,
-                    "description" : description,
-                    "priority": priority,
-                    "due_date": due_date,
-                    "assigned_date": assigned_date,
-                    "category": category
-            }] }
+          
+            new_item = {username: {
+                        "tasks": [
+                            {
+                            "title": title,
+                            "description": description,
+                            "priority": priority,
+                            "due_date": due_date,
+                            "assigned_date": assigned_date,
+                            "category": category,
+                            }
+                    ]
+                }}
+            with open("data.py", "a") as file:
+                file.write(f"\n{new_item}")        
+                print("New user successfully registered!")
+                break
         except :
-            continue_flag = input("The task hasn't been  inserted! Do you wish to insert another task ? (y,n) ").lower()
-    
-        if continue_flag == "n":
-            break
+            print("Erro")
+
         
 def remove_task(username, title):
         main.clear_terminal()

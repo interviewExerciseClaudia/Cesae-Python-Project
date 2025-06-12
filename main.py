@@ -51,23 +51,19 @@ def user_menu(user_logged):
         opc = input("Escolha uma opção: ")
 
         if opc == '1':
-            pass
-            #adicionar_tarefa_ui(user)
+            add_new_task(user_logged)
         elif opc == '2':
-            pass
-            #edit_task(user)
+            edit_task()
         elif opc == '3':
-            pass
-            #delete_task(user)
+            remove_task()
         elif opc == '4':
-            pass
-            #list_tasks(user)
+            #NAO LISTA AS TASKS PENDENTES DE mOENTO. LISTA TODAS AS TASKS DE UM USER.
+            get_my_tasks()
         elif opc == '5':
             pass
             #mark_as_complete(user)
         elif opc == '6':
-            pass
-            #search_task(user)
+            get_tasks_by_user(user_logged)
         elif opc == '7':
             pass
             #show_statistics(user)
