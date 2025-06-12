@@ -52,4 +52,11 @@
 
 ---
 
-## 👥 Contributors](#-contributors)
+## 👥 Contributors
+
+
+| Developer       | Program                              |
+|------------------|---------------------------------------|
+| Felippe Santana  | AWS Cloud Computing and Networking    |
+| Cláudia Silva    | AWS Clpud Computing and Networking    |     
+
