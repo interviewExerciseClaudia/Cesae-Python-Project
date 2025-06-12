@@ -8,14 +8,26 @@
 
 **Cesae Python Project** is a simple yet powerful **Task Manager** that allows users to create and view tasks. It features a basic CRUD system, storing all data in **AWS DynamoDB**, and is perfect for learning serverless development using **Python** and **AWS services**.
 
+> ⚙️ A user-based Task Manager with DynamoDB-powered persistence!
+
 ---
 
 ## ✨ Features
 
-- ✅ Create tasks (per user)
-- 📋 List all tasks
-- ☁️ Store and retrieve data using AWS DynamoDB
-- 🧠 Learn how to serialize Python data with `TypeSerializer`
+✅ Create tasks per user  
+📋 List all user tasks  
+☁️ Store and retrieve data from **AWS DynamoDB**  
+🧠 Uses `TypeSerializer` for data conversion  
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech           | Description                  |
+|----------------|------------------------------|
+| 🐍 Python 3.x   | Main programming language     |
+| ☁️ AWS DynamoDB | NoSQL cloud database          |
+| 📦 boto3        | AWS SDK for Python            |
 
 ---
 
@@ -27,3 +39,17 @@
 - `boto3` library  
   *(Install with `pip install boto3`)*
 - AWS credentials configured (via AWS CLI or `~/.aws/credentials`)
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech           | Description                  |
+|----------------|------------------------------|
+| 🐍 Python 3.x   | Main programming language     |
+| ☁️ AWS DynamoDB | NoSQL cloud database          |
+| 📦 boto3        | AWS SDK for Python            |
+
+---
+
+## 👥 Contributors](#-contributors)
