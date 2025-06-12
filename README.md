@@ -42,16 +42,6 @@
 
 ---
 
-## 🛠️ Tech Stack
-
-| Tech           | Description                  |
-|----------------|------------------------------|
-| 🐍 Python 3.x   | Main programming language     |
-| ☁️ AWS DynamoDB | NoSQL cloud database          |
-| 📦 boto3        | AWS SDK for Python            |
-
----
-
 ## 👥 Contributors
 
 
