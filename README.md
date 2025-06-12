@@ -14,7 +14,7 @@
 ![Item Creation](./tmp_0c584dd1-50fd-4bdb-9e5a-31f3cb1269b6.jpeg)
 
 ### DynamoDB Tasks Table
-![Tasks Table](./file-KVXWdM1u2RGFKqu5x2gGUk)
+![Tasks Table](./tmp_190b4591-0505-4954-ae70-54fa9e010abe.jpeg)
 
 ---
 
